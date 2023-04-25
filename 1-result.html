@@ -1,0 +1,43 @@
+<script type="text/javascript">
+
+    class demo {
+        sum() {
+            let phys = parseInt(prompt("Enter first number"));
+            let chem = parseInt(prompt("Enter second number"));
+            let bio = parseInt(prompt("Enter third number"));
+            let math = parseInt(prompt("Enter fourth number"));
+            let com = parseInt(prompt("Enter fifth number"));
+            let per;
+
+            per = (phys + chem + bio + math + com);
+            let avg = per / 5;
+
+
+            if (avg >= 90) {
+                document.write("<h1>Grade A</h1>");
+            }
+
+            else if (avg >= 80) {
+                document.write("<h1>Grade B</h1>");
+            }
+
+            else if (avg >= 70) {
+                document.write("<h1>Grade C</h1>");
+            }
+
+            else if (avg >= 60) {
+                document.write("<h1>Grade D</h1>");
+            }
+
+            else if (avg >= 40) {
+                document.write("<h1>Grade E</h1>");
+            }
+
+            else {
+                document.write("<h1>Grade F</h1>");
+            }
+        }
+    }
+    let obj = new demo;
+    obj.sum();
+</script>
